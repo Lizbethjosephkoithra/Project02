@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.myapplicationdev.project02.Main9Activity">
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delivery Address" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editTextUnit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="08"
+                android:inputType="textPersonName"
+                android:text="08" />
+
+            <EditText
+                android:id="@+id/editTextFloor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="314"
+                android:inputType="textPersonName"
+                android:text="314" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editTextPostal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="730129"
+            android:inputType="textPersonName"
+            android:text="730129" />
+
+        <EditText
+            android:id="@+id/editTextInstruc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:ems="10"
+            android:hint="Delivery Instructions.[eg:Leave outside gate]"
+            android:inputType="textPersonName"
+            android:text="Leave outside" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delivery Date" />
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="11th January 2019, Monday"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delivery Time" />
+
+    <EditText
+        android:id="@+id/editTextTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="12:00pm - 02:00pm"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Phone Number" />
+
+    <EditText
+        android:id="@+id/editTextNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="83531646"
+        android:inputType="textPersonName"
+        android:text="83531646" />
+
+    <Button
+        android:id="@+id/buttonPayment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirm  order" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Note: Payment is only Cash-On-Delivery !"
+        android:textColor="@color/red" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Order ends here"
+        android:gravity="center"
+        android:textColor="@color/red"/>
+</LinearLayout>

@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <!--<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+        <!--xmlns:tools="http://schemas.android.com/tools"-->
+        <!--android:id="@+id/my_toolbar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="?attr/actionBarSize"-->
+        <!--style="@style/HeaderBar"-->
+        <!--android:elevation="4dp"-->
+        <!--/>-->
+    <!--app:theme="@style/ActionBarThemeOverlay"-->
+    <!--app:popupTheme="@style/ActionBarPopupThemeOverlay"-->
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            >
+
+            <ImageButton
+                android:id="@+id/imageButtonTomato"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                app:srcCompat="@drawable/tomato" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textViewTomato"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tomato"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textSize="30dp" />
+
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textViewkgtom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1kg"
+                        android:textSize="20dp" />
+
+
+                    <ImageButton
+                        android:id="@+id/imageButtonadd1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="43dp"
+                        android:background="@color/white"
+                        app:srcCompat="@drawable/addtocart" />
+
+                </LinearLayout>
+
+                <Spinner
+                    android:id="@+id/spinner1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </Spinner>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            >
+
+            <ImageButton
+                android:id="@+id/imageButtonCabbage"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                app:srcCompat="@drawable/cabbage" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewcabbage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cabbage"
+                    android:layout_marginTop="10dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textSize="30dp" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textViewkgcab"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1kg"
+                        android:textSize="20dp" />
+
+                    <ImageButton
+                        android:id="@+id/imageButtonadd2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:paddingLeft="43dp"
+                        app:srcCompat="@drawable/addtocart" />
+
+                </LinearLayout>
+
+                <Spinner
+                    android:id="@+id/spinner2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                </Spinner>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            >
+
+            <ImageButton
+                android:id="@+id/imageButtonBrinjal"
+                android:layout_width="145dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                app:srcCompat="@drawable/brinjal" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginTop="18dp">
+
+                <TextView
+                    android:id="@+id/textViewbrinjal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Brinjal"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textSize="30dp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textViewkgbri"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1kg"
+                        android:textSize="20dp" />
+
+                    <ImageButton
+                        android:id="@+id/imageButtonadd3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:paddingLeft="35dp"
+                        app:srcCompat="@drawable/addtocart" />
+
+                </LinearLayout>
+
+                <Spinner
+                    android:id="@+id/spinner3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </Spinner>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            >
+
+            <ImageButton
+                android:id="@+id/imageButtonBroccoli"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="33dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                app:srcCompat="@drawable/broccoli" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginTop="18dp">
+
+                <TextView
+                    android:id="@+id/textViewbroccoli"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Broccoli"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textSize="30dp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textViewkgbro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1kg"
+                        android:textSize="20dp" />
+
+                    <ImageButton
+                        android:id="@+id/imageButtonadd4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:paddingLeft="40dp"
+                        app:srcCompat="@drawable/addtocart" />
+
+                </LinearLayout>
+
+                <Spinner
+                    android:id="@+id/spinner4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </Spinner>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            >
+
+            <ImageButton
+                android:id="@+id/imageButtonPeas"
+                android:layout_width="154dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="33dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                app:srcCompat="@drawable/peas" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginTop="18dp">
+
+                <TextView
+                    android:id="@+id/textViewpeas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Peas"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textSize="30dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textViewkgpeas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1kg"
+                        android:textSize="20dp" />
+
+                    <ImageButton
+                        android:id="@+id/imageButtonadd5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:paddingLeft="47dp"
+                        app:srcCompat="@drawable/addtocart" />
+
+                </LinearLayout>
+
+                <Spinner
+                    android:id="@+id/spinner5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </Spinner>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+</LinearLayout>
